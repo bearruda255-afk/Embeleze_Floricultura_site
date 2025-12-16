@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Floricultura Embeleze</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Floricultura Embeleze">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="produtos.html"><i class="fas fa-leaf"></i> Produtos</a></li>
+                    <li><a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li><a href="contato.html" class="active"><i class="fas fa-phone"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Contato -->
+        <section class="hero hero-contato">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Fale Conosco</h1>
+                    <p class="hero-subtitle">Estamos prontos para atender você com o carinho e atenção que merece</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informações de Contato -->
+        <section class="info-contato">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Horários -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Horário de Funcionamento</h3>
+                        <div class="horario-lista">
+                            <div class="horario-item">
+                                <span class="dia">Segunda a Sexta</span>
+                                <span class="horario">8h00 - 19h00</span>
+                            </div>
+                            <div class="horario-item">
+                                <span class="dia">Sábados</span>
+                                <span class="horario">Fechado</span>
+                            </div>
+                            <div class="horario-item">
+                                <span class="dia">Domingos</span>
+                                <span class="horario">8h00 - 12h00</span>
+                            </div>
+                        </div>
+                        <p class="observacao">* Atendimento presencial e online</p>
+                    </div>
+
+                    <!-- Canais de Contato -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Canais de Atendimento</h3>
+                        <div class="canais-lista">
+                            <a href="https://wa.me/5555999162729" target="_blank" class="canal-item whatsapp">
+                                <div class="canal-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="canal-info">
+                                    <span class="canal-titulo">WhatsApp</span>
+                                    <span class="canal-detalhe">(55) 99916-2729</span>
+                                </div>
+                                <div class="canal-status online"></div>
+                            </a>
+                            
+                            <a href="tel:+5555999162729" class="canal-item telefone">
+                                <div class="canal-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="canal-info">
+                                    <span class="canal-titulo">Telefone</span>
+                                    <span class="canal-detalhe">(55) 99916-2729</span>
+                                </div>
+                            </a>
+                            
+                            <a href="mailto:kleinnagel@yahoo.com.br" class="canal-item email">
+                                <div class="canal-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="canal-info">
+                                    <span class="canal-titulo">E-mail</span>
+                                    <span class="canal-detalhe">kleinnagel@yahoo.com.br</span>
+                                </div>
+                            </a>
+                            
+                            <div class="canal-item endereco">
+                                <div class="canal-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="canal-info">
+                                    <span class="canal-titulo">Endereço</span>
+                                    <span class="canal-detalhe">Rua Planalto, Três de Maio - RS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato Rápido -->
+        <section class="contato-rapido">
+            <div class="container">
+                <div class="contato-form-container">
+                    <div class="form-header">
+                        <h2><i class="fab fa-whatsapp"></i> Atendimento Rápido</h2>
+                        <p>Preencha os campos abaixo para iniciar uma conversa direta no WhatsApp</p>
+                    </div>
+                    
+                    <form class="contato-form" id="contato-form">
+                        <div class="form-group">
+                            <label for="nome-contato">Seu Nome Completo *</label>
+                            <input type="text" id="nome-contato" class="form-input" placeholder="Como gostaria de ser chamado?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone-contato">Seu WhatsApp (opcional)</label>
+                            <input type="tel" id="telefone-contato" class="form-input" placeholder="(55) 99999-9999">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tipo-contato">Tipo de Atendimento *</label>
+                            <select id="tipo-contato" class="form-input" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="orcamento">Orçamento de produto</option>
+                                <option value="personalizado">Arranjo personalizado</option>
+                                <option value="duvida">Dúvida sobre produtos</option>
+                                <option value="entrega">Informações sobre entrega</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem-contato">Mensagem *</label>
+                            <textarea id="mensagem-contato" class="form-textarea" placeholder="Descreva seu pedido ou dúvida..." rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large btn-block">
+                            <i class="fab fa-whatsapp"></i> Iniciar Conversa no WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa e Localização -->
+        <section class="mapa-localizacao">
+            <div class="container">
+                <div class="mapa-header">
+                    <h2 class="section-title">Nossa Localização</h2>
+                    <p class="section-subtitle">Venha nos visitar em Três de Maio</p>
+                </div>
+
+                <div class="mapa-content">
+                    <div class="mapa-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Rua Planalto<br>Três de Maio - RS<br>98910-000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horário de Funcionamento</h4>
+                                <p>Segunda a Sexta: 8h - 19h<br>Domingos: 8h - 12h<br>Sábados: Fechado</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <h4>Estacionamento</h4>
+                                <p>Ampla vagas disponíveis<br>em frente à loja</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-wheelchair"></i>
+                            <div>
+                                <h4>Acessibilidade</h4>
+                                <p>Local totalmente acessível<br>para pessoas com mobilidade reduzida</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mapa-embed">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14141.531238965824!2d-54.249491100000005!3d-27.7661075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fc23011400874b%3A0x6b7440263f458117!2sR.%20Planalto%2C%20Tr%C3%AAs%20de%20Maio%20-%20RS%2C%2098910-000%2C%20Brazil!5e0!3m2!1sen!2sbr!4v1700000000000!5m2!1sen!2sbr" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-contato">
+            <div class="container">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tire suas dúvidas rapidamente</p>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-pergunta">
+                            <h4>Como faço para encomendar um arranjo personalizado?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-resposta">
+                            <p>Entre em contato pelo WhatsApp ou telefone e nossa florista irá te auxiliar na criação do arranjo perfeito, escolhendo cores, tipos de flores e estilo de embalagem.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-pergunta">
+                            <h4>Vocês fazem entregas?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-resposta">
+                            <p>Sim! Fazemos entregas em Três de Maio e região. O valor do frete varia de acordo com a localização. Entre em contato para simular o valor da entrega.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-pergunta">
+                            <h4>Qual o prazo para entrega?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-resposta">
+                            <p>Para pedidos comuns, o prazo é de 24 a 48 horas. Para arranjos personalizados, o prazo pode variar de 2 a 5 dias úteis, dependendo da complexidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-pergunta">
+                            <h4>Quais formas de pagamento vocês aceitam?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-resposta">
+                            <p>Aceitamos cartão de crédito, débito, PIX e dinheiro. Parcelamentos ao entrar em contato.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Floricultura Embeleze</h3>
+                    <p>Há mais de 20 anos trazendo beleza e emoção através das flores em Três de Maio e região.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/floriculturaembeleze/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5555999162729" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:kleinnagel@yahoo.com.br" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                        <li><a href="produtos.html"><i class="fas fa-leaf"></i> Produtos</a></li>
+                        <li><a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+                        <li><a href="contato.html"><i class="fas fa-phone"></i> Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <div class="contact-info">
+                        <a href="https://wa.me/5555999162729" target="_blank" class="contact-item">
+                            <i class="fab fa-whatsapp"></i> (55) 99916-2729
+                        </a>
+                        <a href="tel:+5555999162729" class="contact-item">
+                            <i class="fas fa-phone"></i> (55) 99916-2729
+                        </a>
+                        <a href="mailto:kleinnagel@yahoo.com.br" class="contact-item">
+                            <i class="fas fa-envelope"></i> kleinnagel@yahoo.com.br
+                        </a>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i> Rua Planalto, Três de Maio - RS
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Floricultura Embeleze. Todos os direitos reservados.</p>
+                <p>Desenvolvido com ❤️ para trazer mais beleza ao mundo</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5555999162729" target="_blank" class="whatsapp-float" title="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Botão Scroll to Top -->
+    <button id="scrollToTopBtn" class="btn-scroll-top" title="Voltar ao Topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

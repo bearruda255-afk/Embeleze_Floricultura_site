@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste Fotos Produtos</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .fotos { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+        .foto-item { border: 1px solid #ddd; padding: 10px; border-radius: 5px; }
+        .foto-item img { width: 100%; height: 150px; object-fit: cover; }
+    </style>
+</head>
+<body>
+    <h1>Teste das 10 primeiras fotos</h1>
+    <div class="fotos" id="fotos-container"></div>
+    
+    <script>
+        const container = document.getElementById('fotos-container');
+        
+        for (let i = 1; i <= 10; i++) {
+            const num = String(i).padStart(3, '0');
+            const img = document.createElement('img');
+            img.src = `fotos-produtos/produto-${num}.jpg`;
+            img.alt = `Produto ${num}`;
+            img.onerror = function() {
+                this.src = 'https://via.placeholder.com/150x150?text=Erro';
+                this.style.border = '2px solid red';
+            };
+            
+            const item = document.createElement('div');
+            item.className = 'foto-item';
+            item.innerHTML = `<p>produto-${num}.jpg</p>`;
+            item.appendChild(img);
+            
+            container.appendChild(item);
+        }
+    </script>
+</body>
+</html>

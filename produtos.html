@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos - Floricultura Embeleze</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Floricultura Embeleze">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="produtos.html" class="active"><i class="fas fa-leaf"></i> Produtos</a></li>
+                    <li><a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li><a href="contato.html"><i class="fas fa-phone"></i> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Produtos -->
+        <section class="hero hero-produtos">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Catálogo Completo</h1>
+                    <p class="hero-subtitle">Encontre a planta perfeita para cada ocasião</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Personalização -->
+        <section class="personalizacao-cta">
+            <div class="container">
+                <div class="personalizacao-content">
+                    <h2><i class="fas fa-palette"></i> Quer algo personalizado?</h2>
+                    <p>Fale com nossa florista e crie um arranjo exclusivo!</p>
+                    <a href="https://wa.me/5555999162729" target="_blank" class="btn btn-secondary btn-large">
+                        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filtros -->
+        <section class="catalogo-produtos">
+            <div class="container">
+                <div class="catalogo-header">
+                    <h2 class="section-title">Nossos Produtos</h2>
+                    <p class="section-subtitle">Clique em "Comprar" para pedir via WhatsApp</p>
+                    
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" onclick="filtrarProdutos('todos')">
+                            <i class="fas fa-grip-horizontal"></i> Todos
+                        </button>
+                        <button class="filter-btn" onclick="filtrarProdutos('vasos')">
+                            <i class="fas fa-wine-bottle"></i> Vasos
+                        </button>
+                        <button class="filter-btn" onclick="filtrarProdutos('bonsais')">
+                            <i class="fas fa-tree"></i> Bonsais
+                        </button>
+                        <button class="filter-btn" onclick="filtrarProdutos('orquideas')">
+                            <i class="fas fa-spa"></i> Orquídeas
+                        </button>
+                        <button class="filter-btn" onclick="filtrarProdutos('mudas')">
+                            <i class="fas fa-seedling"></i> Mudas
+                        </button>
+                        <button class="filter-btn" onclick="filtrarProdutos('plantas')">
+                            <i class="fas fa-leaf"></i> Plantas
+                        </button>
+                        <button class="filter-btn" onclick="filtrarProdutos('suculentas')">
+                            <i class="fas fa-seedling"></i> Suculentas
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ========== AQUI COMEÇAM OS PRODUTOS ========== -->
+                <!-- COLE TODOS OS 122 PRODUTOS DENTRO DESTA DIV -->
+                                <div class="produto-grid" id="produto-grid">
+
+                        <div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (1).jpg" alt="Cacto com Flor Amarela" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Floração</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-seedling"></i> Cacto Florífero Amarelo</h3>
+<p>Cacto globular em grupo, com uma linda e vibrante flor amarela. Ideal para colecionadores e amantes de cactos floríferos.</p>
+<div class="produto-preco">R$ 55,90</div>
+<button class="btn-comprar" data-nome="Cacto Florifero Amarelo" data-valor="55.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="orquideas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (2).jpg" alt="Orquídea Mini Phalaenopsis Lilás" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Mini</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-feather-alt"></i> Orquídea Mini Phalaenopsis</h3>
+<p>Orquídea de fácil cultivo, com flores delicadas em tom lilás/rosa. Perfeita para decorar mesas e aparadores. Vaso 6cm.</p>
+<div class="produto-preco">R$ 89,90</div>
+<button class="btn-comprar" data-nome="Orquidea Mini Phalaenopsis" data-valor="89.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-pendente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (3).jpg" alt="Hera Variegata Pendente" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Pendente</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-vine"></i> Hera Variegata em Cesta</h3>
+<p>Planta trepadeira/pendente com folhas variegatas verde e branco. Kit com 4 vasos prontos para pendurar. Marca Yasutake.</p>
+<div class="produto-preco">R$ 35,00</div>
+<button class="btn-comprar" data-nome="Hera Variegata" data-valor="35.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (4).jpg" alt="Bico-de-Papagaio Decorado Luxo" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Natal</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-holly-berry"></i> Poinsettia Vermelha Luxo</h3>
+<p>Bico-de-Papagaio (Poinsettia) embalado com papel decorado e laço de cetim. Presente clássico de fim de ano.</p>
+<div class="produto-preco">R$ 69,90</div>
+<button class="btn-comprar" data-nome="Poinsettia Luxo" data-valor="69.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-barro">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (5).jpg" alt="Vaso de Barro para Orquídea com Furos" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Aeração</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-ruler-combined"></i> Vaso de Barro Furos (Orquídea)</h3>
+<p>Vaso em terracota com furos laterais e inferiores. Essencial para o cultivo de orquídeas, garantindo drenagem e aeração.</p>
+<div class="produto-preco">R$ 28,50</div>
+<button class="btn-comprar" data-nome="Vaso Barro Orquidea" data-valor="28.50">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="sorte">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (6).jpg" alt="Bambu da Sorte em Vaso Quadrado" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Prosperidade</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-hand-holding-heart"></i> Bambu da Sorte (Hastes Agrupadas)</h3>
+<p>Arranjo de Bambu da Sorte em vaso quadrado branco com pedras decorativas brancas. Símbolo de boa sorte.</p>
+<div class="produto-preco">R$ 49,90</div>
+<button class="btn-comprar" data-nome="Bambu da Sorte Agrupado" data-valor="49.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="flores-corte">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (7).jpg" alt="Antúrios de Corte Vermelhos" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Corte</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-heart"></i> Antúrio Corte Vermelho</h3>
+<p>Flores de Antúrio de corte, embaladas. Cor vermelha intensa e brilho natural. Perfeitas para montagem de arranjos.</p>
+<div class="produto-preco">R$ 15,00</div>
+<button class="btn-comprar" data-nome="Anturio Corte (Unidade)" data-valor="15.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="muda-forracao">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (8).jpg" alt="Mudas de Torenia Roxo/Branco" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Jardim</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-fill-drip"></i> Mudas de Torenia</h3>
+<p>Lote de mudas de Torenia (Flor do Sapo) com flores roxas, brancas e rosas. Ideal para canteiros e forração em sombra parcial.</p>
+<div class="produto-preco">R$ 8,00</div>
+<button class="btn-comprar" data-nome="Mudas de Torenia" data-valor="8.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="trepadeira">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (9).jpg" alt="Mandevilla Amarela Pendente" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Sol Pleno</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-sun"></i> Mandevilla Amarela</h3>
+<p>Trepadeira de crescimento rápido com flores amarelas em formato de trompete. Ideal para cestas suspensas e locais com sol.</p>
+<div class="produto-preco">R$ 59,90</div>
+<button class="btn-comprar" data-nome="Mandevilla Amarela" data-valor="59.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-decorativos">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (10).jpg" alt="Vasos de Cerâmica e Cimento Variados" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Coleção</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-boxes"></i> Vasos Rústicos e Modernos</h3>
+<p>Seleção de vasos grandes em cerâmica e cimento com diversos formatos. Ideal para grandes folhagens de interior e exterior.</p>
+<div class="produto-preco">R$ XXX,XX</div>
+<button class="btn-comprar" data-nome="Vasos Decorativos Grandes" data-valor="00.00">
+<i class="fab fa-whatsapp"></i> Consultar Preço
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (11).jpg" alt="Suculenta Echeveria Elegans" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Roseta</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-fan"></i> Suculenta Echeveria Elegans</h3>
+<p>Suculenta em formato de roseta, com bordas rosadas e aspecto pruinoso. Resistente e de fácil cuidado. Diâmetro grande.</p>
+<div class="produto-preco">R$ 39,90</div>
+<button class="btn-comprar" data-nome="Echeveria Elegans" data-valor="39.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (12).jpg" alt="Bico-de-Papagaio Presente Vermelho" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Presente</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-ribbon"></i> Bico-de-Papagaio Premium</h3>
+<p>Poinsettia de folhas vermelhas exuberantes, embalada com papel celofane vermelho decorado e laço de cetim.</p>
+<div class="produto-preco">R$ 79,90</div>
+<button class="btn-comprar" data-nome="Bico-de-Papagaio Premium" data-valor="79.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-grandes">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (13).jpg" alt="Vaso Cônico Grande Marrom e Bege" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Rústico</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-tree-city"></i> Vaso Cônico Gigante</h3>
+<p>Vaso cônico em material rústico, com acabamento em dois tons (marrom e bege). Ideal para árvores e grandes folhagens.</p>
+<div class="produto-preco">R$ XXX,XX</div>
+<button class="btn-comprar" data-nome="Vaso Conico Gigante" data-valor="00.00">
+<i class="fab fa-whatsapp"></i> Consultar Preço
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="orquideas-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (14).jpg" alt="Orquídea Phalaenopsis Presente" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Elegante</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-gift"></i> Orquídea Phalaenopsis Clara</h3>
+<p>Orquídea com flores em tons de branco e rosa. Embalada em papel verde musgo com laço nude, pronta para presentear.</p>
+<div class="produto-preco">R$ 99,90</div>
+<button class="btn-comprar" data-nome="Orquidea Phalaenopsis Clara" data-valor="99.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-barro">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (15).jpg" alt="Vaso Cilíndrico de Terracota Grande" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Moderno</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-shapes"></i> Vaso Cilíndrico de Barro</h3>
+<p>Vaso grande em terracota com formato cilíndrico. Ideal para folhagens de ambientes internos. Estilo rústico moderno.</p>
+<div class="produto-preco">R$ 140,00</div>
+<button class="btn-comprar" data-nome="Vaso Cilindrico Barro" data-valor="140.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (16).jpg" alt="Bico-de-Papagaio Presente Vermelho" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Festa</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-ribbon"></i> Bico-de-Papagaio Embalado</h3>
+<p>Poinsettia (Bico-de-Papagaio) de tamanho médio, embalada com papel celofane vermelho decorado e laço. Essencial para o Natal.</p>
+<div class="produto-preco">R$ 79,90</div>
+<button class="btn-comprar" data-nome="Bico-de-Papagaio Embalado" data-valor="79.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="conifera">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (17).jpg" alt="Cipreste Dourado Limão" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Aromático</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-tree"></i> Cipreste Dourado (Limão)</h3>
+<p>Arbusto conífero de cor verde-limão vibrante. Ideal para paisagismo e uso como mini-pinheiro de Natal. Possui aroma cítrico.</p>
+<div class="produto-preco">R$ 45,00</div>
+<button class="btn-comprar" data-nome="Cipreste Dourado Limao" data-valor="45.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="arbusto-flor">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (18).jpg" alt="Calindra Flor-de-Pena Rosa" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Rústica</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-feather"></i> Calindra (Flor-de-Pena)</h3>
+<p>Arbusto rústico com flores exóticas em formato de pena, de cor rosa e branco. Floresce durante grande parte do ano. Atrai beija-flores.</p>
+<div class="produto-preco">R$ 65,00</div>
+<button class="btn-comprar" data-nome="Calindra Flor-de-Pena" data-valor="65.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="flores-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (19).jpg" alt="Antúrio Vermelho Presente" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Romance</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-heartbeat"></i> Antúrio Vermelho Embalado</h3>
+<p>Antúrio com folhas e espatas vermelhas brilhantes, embalado com celofane e laço vermelho. Planta duradoura para ambientes internos.</p>
+<div class="produto-preco">R$ 75,00</div>
+<button class="btn-comprar" data-nome="Anturio Vermelho Embalado" data-valor="75.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="anturios">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (20).jpg" alt="Antúrio Vermelho Vaso" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Clássico</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-leaf"></i> Antúrio Vermelho Comum</h3>
+<p>Planta Antúrio de porte médio em vaso plástico simples (marrom). Ideal para ser replantada ou usada em cachepots.</p>
+<div class="produto-preco">R$ 50,00</div>
+<button class="btn-comprar" data-nome="Anturio Vermelho Vaso" data-valor="50.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (21).jpg" alt="Bico-de-Papagaio Natalino" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Festivo</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-sleigh"></i> Poinsettia Natalina</h3>
+<p>Bico-de-Papagaio de tamanho médio, embalado em papel celofane verde e vermelho. Pronta para decorar ou presentear no Natal.</p>
+<div class="produto-preco">R$ 75,00</div>
+<button class="btn-comprar" data-nome="Poinsettia Natalina" data-valor="75.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="orquideas-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (22).jpg" alt="Orquídea Phalaenopsis Roxa Presente" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Luxo</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-crown"></i> Orquídea Phalaenopsis Roxa</h3>
+<p>Orquídea com flores roxas maculadas e hastes altas, embalada em papel decorativo e laço rosa choque. Alto impacto visual.</p>
+<div class="produto-preco">R$ 119,90</div>
+<button class="btn-comprar" data-nome="Orquidea Phalaenopsis Roxa" data-valor="119.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (23).jpg" alt="Begônia Rex Folhagem Colorida" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Interior</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-palette"></i> Begônia Rex (Foliagem)</h3>
+<p>Begônia com folhagem exuberante e colorida, em tons de vermelho, vinho e verde. Ideal para ambientes internos com luz indireta.</p>
+<div class="produto-preco">R$ 45,00</div>
+<button class="btn-comprar" data-nome="Begonia Rex" data-valor="45.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (24).jpg" alt="Cacto Amendoim Flor Laranja" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Exótica</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-hot-tub"></i> Cacto Amendoim Flor Laranja</h3>
+<p>Cacto da variedade Amendoim, de caules finos e flor em tom laranja intenso. Floresce no verão. Vaso de 10cm.</p>
+<div class="produto-preco">R$ 49,90</div>
+<button class="btn-comprar" data-nome="Cacto Amendoim Laranja" data-valor="49.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="orquideas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (25).jpg" alt="Orquídea Phalaenopsis Bicolor" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Bicolor</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-spa"></i> Orquídea Phalaenopsis Bicolor</h3>
+<p>Orquídea com flores grandes nas cores branco, rosa e vinho no labelo. Beleza delicada e clássica. Ideal para presentes.</p>
+<div class="produto-preco">R$ 95,00</div>
+<button class="btn-comprar" data-nome="Orquidea Phalaenopsis Bicolor" data-valor="95.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (26).jpg" alt="Cipreste e Poinsettias de Natal" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Kit Natal</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-gifts"></i> Kit Cipreste e Poinsettias</h3>
+<p>Conjunto de Ciprestes Limão (mini-pinheiros) e Poinsettias de cores mistas (vermelha e variegata). Prontos para decoração.</p>
+<div class="produto-preco">R$ XXX,XX</div>
+<button class="btn-comprar" data-nome="Kit Decoracao Natalina" data-valor="00.00">
+<i class="fab fa-whatsapp"></i> Consultar Preço
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="orquideas-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (27).jpg" alt="Orquídea Phalaenopsis Roxa Presente" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Luxo</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-crown"></i> Orquídea Phalaenopsis Roxa</h3>
+<p>Orquídea com flores roxas maculadas e hastes altas, embalada em papel decorativo e laço rosa choque. (Repetição do Prod 22).</p>
+<div class="produto-preco">R$ 119,90</div>
+<button class="btn-comprar" data-nome="Orquidea Phalaenopsis Roxa" data-valor="119.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (28).jpg" alt="Poinsettias Variegata e Vermelha" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Dupla</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-star"></i> Poinsettias (Par)</h3>
+<p>Dupla de Bico-de-Papagaio, sendo uma vermelha e uma variegata (pintada). Embaladas individualmente com laços vermelhos. </p>
+<div class="produto-preco">R$ 130,00</div>
+<button class="btn-comprar" data-nome="Dupla Poinsettia" data-valor="130.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="orquideas-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (29).jpg" alt="Orquídea Phalaenopsis Amarela" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Rara</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-sun"></i> Orquídea Phalaenopsis Amarela</h3>
+<p>Orquídea com flores amarelas, embalada em papel verde musgo com laço amarelo. Uma cor menos comum e muito procurada.</p>
+<div class="produto-preco">R$ 129,90</div>
+<button class="btn-comprar" data-nome="Orquidea Phalaenopsis Amarela" data-valor="129.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="carnivoras">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (30).jpg" alt="Vênus Papa-Moscas" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Exótica</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-bug"></i> Vênus Papa-Moscas (Dionaea)</h3>
+<p>Planta carnívora em embalagem múltipla (kit com 6 vasos). Ideal para controle de insetos e coleção. Necessita de água destilada.</p>
+<div class="produto-preco">R$ 55,00</div>
+<button class="btn-comprar" data-nome="Venus Papa-Moscas Kit" data-valor="55.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (31).jpg" alt="Arranjo Natalino com Palmeira" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Arranjo</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-tree-palm"></i> Arranjo Bico-de-Papagaio e Palmeira</h3>
+<p>Arranjo natalino com Poinsettia (vermelha) e Palmeira Chamaedorea. Embalado em caixa e papel vermelho. Elegante para presentes.</p>
+<div class="produto-preco">R$ 95,00</div>
+<button class="btn-comprar" data-nome="Arranjo Bico-Papagaio Palma" data-valor="95.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="sorte">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (32).jpg" alt="Bambu da Sorte em Vaso Branco Moderno" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Sorte</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-dragon"></i> Bambu da Sorte no Vaso Moderno</h3>
+<p>Arranjo de Bambu da Sorte (Dracaena) em vaso branco geométrico, com pedras. Planta vertical, ideal para escritórios e salas.</p>
+<div class="produto-preco">R$ 65,00</div>
+<button class="btn-comprar" data-nome="Bambu da Sorte Moderno" data-valor="65.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="flores-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (33).jpg" alt="Antúrio Vinho Embalado" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Vináceo</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-wine-glass"></i> Antúrio Vinho Embalado</h3>
+<p>Antúrio com espatas em tom vinho/bordô, embalado em papel decorativo e laço vermelho. Cor sofisticada e diferente do vermelho puro.</p>
+<div class="produto-preco">R$ 80,00</div>
+<button class="btn-comprar" data-nome="Anturio Vinho" data-valor="80.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="orquideas-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (34).jpg" alt="Orquídea Phalaenopsis Amarela" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Rara</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-sun"></i> Orquídea Phalaenopsis Amarela</h3>
+<p>Orquídea com flores amarelas, embalada em papel verde musgo com laço amarelo. (Repetição do Prod 29).</p>
+<div class="produto-preco">R$ 129,90</div>
+<button class="btn-comprar" data-nome="Orquidea Phalaenopsis Amarela" data-valor="129.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="servicos">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (35).jpg" alt="Paisagismo e Jardinagem" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Serviço</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-wrench"></i> Consultoria e Paisagismo</h3>
+<p>Serviços de consultoria, implantação e manutenção de jardins. Projetos personalizados para áreas externas e internas.</p>
+<div class="produto-preco">R$ XXX,XX</div>
+<button class="btn-comprar" data-nome="Servico Paisagismo" data-valor="00.00">
+<i class="fab fa-whatsapp"></i> Solicitar Orçamento
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-decorativos">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (36).jpg" alt="Vasos Gomos de Fibra de Vidro" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Fibra</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-globe"></i> Vaso Esfera de Gomos (Par)</h3>
+<p>Vasos grandes em formato esférico, com acabamento em gomos, na cor tabaco (marrom escuro). Ideal para ambientes internos e externos.</p>
+<div class="produto-preco">R$ XXX,XX</div>
+<button class="btn-comprar" data-nome="Vaso Esfera Gomos" data-valor="00.00">
+<i class="fab fa-whatsapp"></i> Consultar Preço
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="trepadeira">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (37).jpg" alt="Buganvília Rosa Intenso" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Sol Pleno</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-fire"></i> Buganvília (Bougainvillea)</h3>
+<p>Trepadeira rústica e de fácil manutenção, com flores na cor rosa intenso (Magenta). Ideal para sol pleno e cobertura de muros.</p>
+<div class="produto-preco">R$ 49,90</div>
+<button class="btn-comprar" data-nome="Buganvilia Rosa Intenso" data-valor="49.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="orquideas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (38).jpg" alt="Orquídea Phalaenopsis Maculada" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Exótica</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-paint-brush"></i> Orquídea Phalaenopsis Maculada</h3>
+<p>Variedade de Phalaenopsis com manchas grandes na cor magenta (roxo) sobre fundo branco. Floração de alto valor estético.</p>
+<div class="produto-preco">R$ 139,90</div>
+<button class="btn-comprar" data-nome="Orquidea Phalaenopsis Maculada" data-valor="139.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (39).jpg" alt="Arranjo de Suculentas em Caixa" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Arranjo</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-box-open"></i> Arranjo de Suculentas em Madeira</h3>
+<p>Arranjo misto com diversas espécies de Suculentas em caixa de madeira rústica, decorado com pedras brancas. Ótimo para presente.</p>
+<div class="produto-preco">R$ 75,00</div>
+<button class="btn-comprar" data-nome="Arranjo Suculentas Madeira" data-valor="75.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="anturios">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (40).jpg" alt="Antúrio Bicolor/Bronze Presente" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Bicolor</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-mask"></i> Antúrio Bicolor (Bronze/Verde)</h3>
+<p>Antúrio com espatas que mesclam tons de bronze/vermelho escuro e verde. Embalado para presente. Planta de folhagem grande.</p>
+<div class="produto-preco">R$ 85,00</div>
+<button class="btn-comprar" data-nome="Anturio Bicolor Presente" data-valor="85.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="sorte">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (41).jpg" alt="Bambu da Sorte Trançado" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Trançado</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-infinity"></i> Bambu da Sorte Trançado</h3>
+<p>Arranjo de Bambu da Sorte com hastes trançadas de forma decorativa, em vaso branco moderno com pedras. Peça de alto valor ornamental.</p>
+<div class="produto-preco">R$ 79,90</div>
+<button class="btn-comprar" data-nome="Bambu da Sorte Trancado" data-valor="79.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-infantis">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (42).jpg" alt="Vaso Decorativo Infantil Boneco" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Infantil</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-smile"></i> Vaso Boneco Decorativo</h3>
+<p>Vaso divertido em cerâmica pintada em formato de boneco (com gravata) e pernas de sisal. Plantado com Ripsális (Cacto Macarrão).</p>
+<div class="produto-preco">R$ 60,00</div>
+<button class="btn-comprar" data-nome="Vaso Boneco Ripsalis" data-valor="60.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="flores-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (43).jpg" alt="Antúrio Vinho Embalado" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Elegante</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-wine-glass"></i> Antúrio Vinho Embalado (Grande)</h3>
+<p>Antúrio com espatas em tom vinho/bordô e pedúnculo verde, embalado com papel decorativo e laço vermelho. Planta de porte grande para ambientes internos.</p>
+<div class="produto-preco">R$ 95,00</div>
+<button class="btn-comprar" data-nome="Anturio Vinho Grande" data-valor="95.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (44).jpg" alt="Suculenta Adromischus Cooperi" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Grande</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-compact-disc"></i> Suculenta Orelha de Shrek Gigante</h3>
+<p>Variedade de suculenta de folhas grandes e arredondadas com tons de marrom/vinho, intensificados pelo sol. Aspecto carnudo.</p>
+<div class="produto-preco">R$ 35,00</div>
+<button class="btn-comprar" data-nome="Suculenta Orelha Shrek" data-valor="35.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas-flor">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (45).jpg" alt="Suculenta Pachyphytum em Floração" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Floração</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-fire-alt"></i> Suculenta Pachyphytum Florífera</h3>
+<p>Suculenta de roseta pequena e hastes florais longas com flores em tons de amarelo e vermelho. Ideal para coleções.</p>
+<div class="produto-preco">R$ 29,90</div>
+<button class="btn-comprar" data-nome="Pachyphytum Florifera" data-valor="29.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="trepadeira">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (46).jpg" alt="Buganvília Roxa/Magenta" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Sol Pleno</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-bolt"></i> Buganvília Roxa (Bougainvillea)</h3>
+<p>Trepadeira rústica e vibrante na cor roxa intensa (magenta). Ideal para sol pleno, pórticos e treliças. Muda com suporte.</p>
+<div class="produto-preco">R$ 55,00</div>
+<button class="btn-comprar" data-nome="Buganvilia Roxa" data-valor="55.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas-mistas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (47).jpg" alt="Mix de Suculentas e Crasulas" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Miniaturas</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-braille"></i> Mix de Suculentas (Potes M)</h3>
+<p>Variedade de suculentas, incluindo Echeverias pruinosas e Crasulas Variegatas. Potes pequenos, ideais para montagem de terrários. (Repetição do Prod 47).</p>
+<div class="produto-preco">R$ 15,00</div>
+<button class="btn-comprar" data-nome="Mix de Suculentas Potes M" data-valor="15.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas-aenium">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (49).jpg" alt="Suculenta Aeonium Zwartkop" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Inverno</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-yin-yang"></i> Suculenta Aeonium 'Black Rose'</h3>
+<p>Aeonium com rosetas grandes e folhas escuras (vinho/roxo) nas pontas, e verde brilhante no centro. Cresce no inverno.</p>
+<div class="produto-preco">R$ 49,90</div>
+<button class="btn-comprar" data-nome="Aeonium Black Rose" data-valor="49.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas-aenium">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (50).jpg" alt="Mix de Aeoniums Coloridos" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Coleção</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-fan"></i> Coleção de Aeoniums (Potes)</h3>
+<p>Mix de diversas variedades de Aeoniums, incluindo 'Black Rose' e variegatas, com rosetas em tons de verde, rosa e vinho. Potes M.</p>
+<div class="produto-preco">R$ 35,00</div>
+<button class="btn-comprar" data-nome="Colecao Aeoniums" data-valor="35.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="trepadeira">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (51).jpg" alt="Bignonia Branca Trepadeira" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Crescimento Rápido</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-mountain"></i> Bignonia Branca (Trepadeira)</h3>
+<p>Trepadeira de folhagem verde intensa, com flores brancas que atraem beija-flores. Muda já tutorada, pronta para ser transplantada.</p>
+<div class="produto-preco">R$ 45,00</div>
+<button class="btn-comprar" data-nome="Bignonia Branca" data-valor="45.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="orquideas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (52).jpg" alt="Orquídea Phalaenopsis Salmão" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Salmão</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-candy-cane"></i> Orquídea Phalaenopsis Salmão</h3>
+<p>Orquídea com flores em um tom suave e raro de salmão/pêssego. Embalada em papel rosa claro, ideal para presente e decoração sofisticada.</p>
+<div class="produto-preco">R$ 149,90</div>
+<button class="btn-comprar" data-nome="Orquidea Phalaenopsis Salmao" data-valor="149.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="trepadeira-flor">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (53).jpg" alt="Clerodendrum 'Sangue de Cristo'" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Rara</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-holly-berry"></i> Trepadeira Sangue de Cristo</h3>
+<p>Clerodendrum thomsoniae, com flores pendentes em formato de gota, nas cores branco (cálice) e vermelho (corola). Floração intensa. Semi-sombra.</p>
+<div class="produto-preco">R$ 55,00</div>
+<button class="btn-comprar" data-nome="Clerodendrum" data-valor="55.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (54).jpg" alt="Bico-de-Papagaio Gigante" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Grande</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-fan"></i> Poinsettia (Bico-de-Papagaio) Jumbo</h3>
+<p>Poinsettia de porte extra-grande e hastes robustas, na cor vermelha intensa. Ideal para decoração de salões e entradas.</p>
+<div class="produto-preco">R$ 150,00</div>
+<button class="btn-comprar" data-nome="Poinsettia Jumbo" data-valor="150.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="bromelias">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (55).jpg" alt="Bromélia Aechmea Fasciata" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Colorida</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-meteor"></i> Bromélia Aechmea 'Castanha'</h3>
+<p>Bromélia ornamental com folhas rígidas em tons de vinho, verde e listras brancas. Coloração intensa sob boa luminosidade.</p>
+<div class="produto-preco">R$ 65,00</div>
+<button class="btn-comprar" data-nome="Bromelia Aechmea" data-valor="65.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-media">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (56).jpg" alt="Philodendron 'Imperial Red'" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Tropical</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-align-left"></i> Philodendron Imperial Verde Escuro</h3>
+<p>Folhagem vertical, de crescimento compacto, com folhas grandes em um verde muito escuro e brilhante. Ideal para vasos em ambientes internos.</p>
+<div class="produto-preco">R$ 75,00</div>
+<button class="btn-comprar" data-nome="Philodendron Imperial" data-valor="75.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-media">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (57).jpg" alt="Philodendron 'Imperial Red'" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Tropical</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-align-left"></i> Philodendron Imperial Verde Escuro</h3>
+<p>Folhagem vertical, de crescimento compacto, com folhas grandes em um verde muito escuro e brilhante. (Repetição do Prod 56).</p>
+<div class="produto-preco">R$ 75,00</div>
+<button class="btn-comprar" data-nome="Philodendron Imperial" data-valor="75.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas-flor">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (58).jpg" alt="Suculenta Ice Plant Flor Rosa" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Floração</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-icicles"></i> Suculenta 'Ice Plant' Florífera</h3>
+<p>Planta suculenta pendente, de cor azul-prateada, com profusão de pequenas flores rosas. Cobre bem vasos e jardineiras.</p>
+<div class="produto-preco">R$ 49,90</div>
+<button class="btn-comprar" data-nome="Suculenta Ice Plant" data-valor="49.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (59).jpg" alt="Bico-de-Papagaio Variegata Presente" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Variegata</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-gift"></i> Poinsettia Variegata Embalada</h3>
+<p>Bico-de-Papagaio com folhas matizadas em tons de vermelho, branco e verde. Embalagem de luxo para presente de Natal.</p>
+<div class="produto-preco">R$ 89,90</div>
+<button class="btn-comprar" data-nome="Poinsettia Variegata" data-valor="89.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="trepadeira">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (60).jpg" alt="Buganvília Rosa Intenso" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Sol Pleno</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-fire"></i> Buganvília Rosa (Bougainvillea)</h3>
+<p>Trepadeira rústica e de fácil manutenção, com flores na cor rosa/magenta. Muda já com flores. Ideal para sol pleno. (Semelhante ao Prod 37).</p>
+<div class="produto-preco">R$ 49,90</div>
+<button class="btn-comprar" data-nome="Buganvilia Rosa" data-valor="49.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-grandes">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (61).jpg" alt="Vasos Cônicos de Fibra de Vidro (Par)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Moderno</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-mountain"></i> Vaso Cônico Fibra (Pedra)</h3>
+<p>Par de vasos grandes em fibra de vidro com acabamento imitando textura de pedra (granilha). Leves e resistentes para exteriores.</p>
+<div class="produto-preco">R$ XXX,XX</div>
+<button class="btn-comprar" data-nome="Vaso Conico Fibra" data-valor="00.00">
+<i class="fab fa-whatsapp"></i> Consultar Preço
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (62).jpg" alt="Cacto Gymnocalycium em Flor Amarela" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Floração</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-seedling"></i> Cacto Gymnocalycium Flor Amarela</h3>
+<p>Cacto globular de cor escura (verde/marrom) com flor em tom de amarelo pálido. Variedade que floresce no topo da cabeça. Vaso 6cm.</p>
+<div class="produto-preco">R$ 39,90</div>
+<button class="btn-comprar" data-nome="Cacto Gymnocalycium" data-valor="39.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="bromelias">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (63).jpg" alt="Bromélia Neoregelia 'Tricolor'" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Exótica</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-sun"></i> Bromélia Neoregelia Verde/Vermelha</h3>
+<p>Bromélia Neoregelia com roseta grande, folhas verde-claro e centro vermelho intenso. Excelente para paisagismo em meia-sombra.</p>
+<div class="produto-preco">R$ 69,90</div>
+<button class="btn-comprar" data-nome="Neoregelia Verde/Vermelha" data-valor="69.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-flor">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (64).jpg" alt="Senecio Macroglossus em Flor" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Amarelo</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-star-of-life"></i> Trepadeira Senecio Flor Amarela</h3>
+<p>Folhagem de crescimento rápido com flores amarelas. Planta ideal para jardins verticais ou vasos pendentes em sol/meia-sombra.</p>
+<div class="produto-preco">R$ 35,00</div>
+<button class="btn-comprar" data-nome="Senecio Flor Amarela" data-valor="35.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="flores-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (65).jpg" alt="Antúrio Vinho/Bordô Pote 15" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Clássico</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-heart"></i> Antúrio Vinho/Bordô (Pote M)</h3>
+<p>Antúrio de espatas grandes e brilhantes em tom bordô escuro, com espádice amarelo. Ideal para interiores bem iluminados.</p>
+<div class="produto-preco">R$ 85,00</div>
+<button class="btn-comprar" data-nome="Anturio Vinho Pote M" data-valor="85.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-barro">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (66).jpg" alt="Vasos de Barro Tipo Bacia (Kit)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Rústico</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-circle"></i> Kit 2 Vasos Bacia de Barro</h3>
+<p>Duas unidades de vasos de cerâmica (barro) em formato de bacia rasa. Ideal para suculentas, mini-jardins e plantas pendentes.</p>
+<div class="produto-preco">R$ 40,00</div>
+<button class="btn-comprar" data-nome="Kit 2 Vasos Bacia Barro" data-valor="40.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (67).jpg" alt="Suculenta Adromischus Crispatum" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Pequena</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-compact-disc"></i> Suculenta Adromischus Crispatum</h3>
+<p>Suculenta de folhas curtas e carnudas, com manchas vermelhas na ponta. Crescimento compacto. Pote 6.</p>
+<div class="produto-preco">R$ 25,00</div>
+<button class="btn-comprar" data-nome="Adromischus Crispatum" data-valor="25.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="coniferas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (68).jpg" alt="Kaizuka Limão (Juniperus Chinensis)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Grande</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-tree"></i> Kaizuka Limão (Juniperus) Grande</h3>
+<p>Cipreste Kaizuka na cor verde limão brilhante. Porte arbustivo, ideal para formação de cercas vivas ou vasos grandes. Pote 30.</p>
+<div class="produto-preco">R$ 130,00</div>
+<button class="btn-comprar" data-nome="Kaizuka Limão Grande" data-valor="130.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (69).jpg" alt="Bico-de-Papagaio Pote 15 (Vermelha)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Natal</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-holly-berry"></i> Poinsettia (Bico-de-Papagaio) Média</h3>
+<p>Planta clássica de Natal, com brácteas vermelhas. Porte médio (Pote 15), ideal para decoração de mesas e bancadas.</p>
+<div class="produto-preco">R$ 69,90</div>
+<button class="btn-comprar" data-nome="Poinsettia Media" data-valor="69.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-barro">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (70).jpg" alt="Vasos de Barro para Orquídeas" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Orquídeas</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-dot-circle"></i> Vasos de Barro para Orquídeas (Kit 4)</h3>
+<p>Quatro vasos de cerâmica com furos laterais, específicos para o cultivo de orquídeas e outros epífitos. Ajuda na drenagem e aeração.</p>
+<div class="produto-preco">R$ 70,00</div>
+<button class="btn-comprar" data-nome="Kit 4 Vasos Orquidea Barro" data-valor="70.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="flores-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (71).jpg" alt="Antúrio Vermelho Pote 15 (Maxi Flor)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Maxi</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-hand-holding-heart"></i> Antúrio Vermelho Maxi-Flor</h3>
+<p>Antúrio com espatas grandes e brilhantes, em um vermelho vivo e vibrante. Excelente como peça central na decoração. (Pote 15).</p>
+<div class="produto-preco">R$ 95,00</div>
+<button class="btn-comprar" data-nome="Anturio Vermelho Maxi" data-valor="95.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-barro">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (72).jpg" alt="Vaso de Barro Tipo Cesta" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Rústico</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-hand-paper"></i> Vaso de Barro Tipo Cesta</h3>
+<p>Vaso de cerâmica sem esmalte, com alça superior, em formato de cesta. Ideal para decoração rústica e uso em jardins verticais ou pendentes.</p>
+<div class="produto-preco">R$ 29,90</div>
+<button class="btn-comprar" data-nome="Vaso Barro Cesta" data-valor="29.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-barro">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (73).jpg" alt="Vasos de Barro para Orquídeas" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Orquídeas</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-dot-circle"></i> Kit 4 Vasos de Barro Redondos para Orquídeas</h3>
+<p>Quatro vasos de cerâmica com furos laterais, específicos para o cultivo de orquídeas e outros epífitos. Ajuda na drenagem e aeração. (Similar ao Prod 70).</p>
+<div class="produto-preco">R$ 70,00</div>
+<button class="btn-comprar" data-nome="Kit 4 Vasos Orquidea Barro" data-valor="70.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-media">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (74).jpg" alt="Begonia Rex Colorida (Grande)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Vibrante</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-certificate"></i> Begônia Rex 'Metallic' Grande</h3>
+<p>Begônia com folhagem ornamental exuberante, mesclada em tons de bordô, verde limão e prata. Grande porte para interiores.</p>
+<div class="produto-preco">R$ 55,00</div>
+<button class="btn-comprar" data-nome="Begonia Rex Grande" data-valor="55.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (75).jpg" alt="Kit 3 Poinsettias (Bico-de-Papagaio)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Trio</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-holly-berry"></i> Trio de Poinsettias Vermelhas (Pote M)</h3>
+<p>Kit com 3 Bicos-de-Papagaio vermelhos, ideais para decorar janelas, bancadas ou varandas na época natalina. Potes de plástico preto.</p>
+<div class="produto-preco">R$ 180,00</div>
+<button class="btn-comprar" data-nome="Trio Poinsettia M" data-valor="180.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="flores-sol">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (76).jpg" alt="Mudas de Vinca (Várias Cores)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Sol Pleno</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-feather-alt"></i> Mudas de Vinca Sortidas (Pacote 10)</h3>
+<p>Pacote de mudas de Vinca (Catharanthus roseus) em cores variadas (branco, rosa, vermelho). Flor de sol, ideal para canteiros e maciços. Preço por 10 unidades.</p>
+<div class="produto-preco">R$ 25,00</div>
+<button class="btn-comprar" data-nome="Mudas Vinca Pacote 10" data-valor="25.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (77).jpg" alt="Arranjo de Poinsettia e Chamaedorea" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Arranjo</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-gift"></i> Arranjo Poinsettia + Palmeira Chamaedorea</h3>
+<p>Composição festiva com Bico-de-Papagaio e Palmeira Chamaedorea. Embalado em caixa vermelha de papel luxo e laço. Ideal para presente.</p>
+<div class="produto-preco">R$ 120,00</div>
+<button class="btn-comprar" data-nome="Arranjo Poinsettia Chamaedorea" data-valor="120.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="coniferas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (78).jpg" alt="Kaizuka Limão (Juniperus Chinensis)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Cerca Viva</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-tree"></i> Kaizuka Limão (Juniperus) Médio</h3>
+<p>Cipreste Kaizuka na cor verde limão, de crescimento vertical. Porte médio, ideal para vasos ou plantio em jardim. (Similar ao Prod 68).</p>
+<div class="produto-preco">R$ 89,90</div>
+<button class="btn-comprar" data-nome="Kaizuka Limão Medio" data-valor="89.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (79).jpg" alt="Suculenta Kalanchoe Thyrsiflora Gigante" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Gigante</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-heart"></i> Suculenta Kalanchoe Flapjack Gigante</h3>
+<p>Kalanchoe Thyrsiflora de folhas grandes, arredondadas e carnosas, com pontas em tom de vinho, intensificado pelo sol. (Similar ao Prod 44).</p>
+<div class="produto-preco">R$ 35,00</div>
+<button class="btn-comprar" data-nome="Kalanchoe Flapjack Gigante" data-valor="35.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (80).jpg" alt="Bico-de-Papagaio Embalado Vermelho" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Clássico</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-tree"></i> Poinsettia Vermelha (Embalagem Decorada)</h3>
+<p>Bico-de-Papagaio (Poinsettia) com brácteas vermelhas e embalagem decorativa em tons natalinos, com laço vermelho.</p>
+<div class="produto-preco">R$ 79,90</div>
+<button class="btn-comprar" data-nome="Poinsettia Vermelha Embalada" data-valor="79.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="flores-sol">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (81).jpg" alt="Mudas de Lantana Câmera (Várias Cores)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Sol Pleno</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-globe-americas"></i> Mudas de Lantana Câmera (Pacote 10)</h3>
+<p>Pacote de mudas de Lantana (arbusto florífero) em cores variadas (amarelo, rosa, vermelho). Excelente para atrair borboletas. Preço por 10 unidades.</p>
+<div class="produto-preco">R$ 30,00</div>
+<button class="btn-comprar" data-nome="Mudas Lantana Pacote 10" data-valor="30.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-media">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (82).jpg" alt="Begonia Rex Mosaico (Trio)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Trio</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-certificate"></i> Begônia Rex 'Mosaico' (Kit 3 Cores)</h3>
+<p>Kit com 3 plantas de Begônia Rex em cores e texturas diferentes (tons de vinho, verde e prateado). Perfeitas para decoração em cachepôs.</p>
+<div class="produto-preco">R$ 150,00</div>
+<button class="btn-comprar" data-nome="Kit 3 Begonias Rex" data-valor="150.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas-flor">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (83).jpg" alt="Suculenta Sedum Aurora Florífera" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Floração</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-sun"></i> Suculenta Sedum Aurora Florido</h3>
+<p>Sedum rubrotinctum 'Aurora', com folhas em tons de rosa e verde. Planta compacta e resistente, atualmente em floração (flores amarelas).</p>
+<div class="produto-preco">R$ 25,00</div>
+<button class="btn-comprar" data-nome="Sedum Aurora Florido" data-valor="25.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-media">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (84).jpg" alt="Philodendron Imperial Red" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Interior</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-align-left"></i> Philodendron Imperial Red (Bordô)</h3>
+<p>Folhagem vertical com folhas novas em tom vermelho/bordô intenso e brilhante. De fácil cuidado, ideal para vasos grandes em ambientes internos.</p>
+<div class="produto-preco">R$ 95,00</div>
+<button class="btn-comprar" data-nome="Philodendron Imperial Red" data-valor="95.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-pendente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (85).jpg" alt="Flor-de-Maio Branca (Pendente)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Pendente</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-feather-alt"></i> Flor-de-Maio Branca (Schlumbergera)</h3>
+<p>Cacto de floração de inverno/primavera (Flor-de-Maio) com flores brancas delicadas. Ideal para cestas suspensas em meia-sombra.</p>
+<div class="produto-preco">R$ 49,90</div>
+<button class="btn-comprar" data-nome="Flor-de-Maio Branca" data-valor="49.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="arvores-frutiferas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (86).jpg" alt="Muda de Jabuticaba (Híbrida)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Frutífera</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-apple-alt"></i> Muda de Jabuticaba Híbrida (Grande)</h3>
+<p>Muda de Jabuticaba de porte médio, já produzindo. Frutifica rapidamente e pode ser cultivada em vasos grandes ou diretamente no solo.</p>
+<div class="produto-preco">R$ 150,00</div>
+<button class="btn-comprar" data-nome="Jabuticaba Hibrida Grande" data-valor="150.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (87).jpg" alt="Suculenta Echeveria 'Black Prince'" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Escura</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-crown"></i> Suculenta Echeveria 'Black Prince'</h3>
+<p>Suculenta de cor escura, quase preta, com rosetas densas. Ideal para coleções e para adicionar contraste em arranjos. Pote 10.</p>
+<div class="produto-preco">R$ 35,00</div>
+<button class="btn-comprar" data-nome="Echeveria Black Prince" data-valor="35.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-media">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (88).jpg" alt="Aspargo Alfinete (Pendente)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Pendente</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-feather-alt"></i> Aspargo Alfinete (Asparagus densiflorus)</h3>
+<p>Folhagem pendente de textura fina, com ramificações leves. Ideal para vasos suspensos em varandas ou áreas com luz filtrada.</p>
+<div class="produto-preco">R$ 39,90</div>
+<button class="btn-comprar" data-nome="Aspargo Alfinete" data-valor="39.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="flores-presente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (89).jpg" alt="Antúrio Vermelho Pote 15 (Embalagem)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Presente</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-gift"></i> Antúrio Vermelho (Embalagem Decorada)</h3>
+<p>Antúrio de tamanho médio (Pote 15), com brácteas vermelhas brilhantes. Embalado em papel branco com laço, pronto para presentear.</p>
+<div class="produto-preco">R$ 85,00</div>
+<button class="btn-comprar" data-nome="Anturio Vermelho Presente" data-valor="85.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-media">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (90).jpg" alt="Begonia Rex (Mosaico) Pote 15" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Interior</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-palette"></i> Begônia Rex 'Mosaico' (Tamanho Único)</h3>
+<p>Begônia com folhagem colorida e grandes padrões em tons de verde, rosa e prata. Ideal para interiores com luz indireta. Pote 15.</p>
+<div class="produto-preco">R$ 55,00</div>
+<button class="btn-comprar" data-nome="Begonia Rex Mosaico" data-valor="55.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="orquideas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (91).jpg" alt="Orquídea Phalaenopsis (Rosa Choque)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Vibrante</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-certificate"></i> Orquídea Phalaenopsis Rosa Choque</h3>
+<p>Orquídea com flores em um tom de rosa choque muito vibrante e intenso. Haste única, já com floração aberta. Vaso de plástico transparente.</p>
+<div class="produto-preco">R$ 109,90</div>
+<button class="btn-comprar" data-nome="Phalaenopsis Rosa Choque" data-valor="109.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (92).jpg" alt="Suculenta Orelha de Shrek" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Exótica</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-compact-disc"></i> Suculenta Orelha de Shrek (Pote M)</h3>
+<p>Crassula ovata 'Gollum', com folhas tubulares que se assemelham a orelhas. Ideal para coleções e decoração moderna. Pote 10.</p>
+<div class="produto-preco">R$ 35,00</div>
+<button class="btn-comprar" data-nome="Suculenta Orelha de Shrek" data-valor="35.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-pendente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (93).jpg" alt="Colar de Pérolas (Pendente)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Pendente</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-compact-disc"></i> Colar de Pérolas (Senecio rowleyanus)</h3>
+<p>Suculenta pendente com folhagem que se assemelha a pequenos "colares" de pérolas. Ideal para vasos suspensos em locais com boa luminosidade.</p>
+<div class="produto-preco">R$ 45,00</div>
+<button class="btn-comprar" data-nome="Colar de Perolas" data-valor="45.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (94).jpg" alt="Arranjo de Suculentas em Vaso de Barro" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Arranjo</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-box-open"></i> Arranjo Misto de Suculentas (Barro)</h3>
+<p>Composição de diversas variedades de Suculentas (Echeveria, Sedum, etc.) em um vaso de barro com decoração de pedras brancas.</p>
+<div class="produto-preco">R$ 69,90</div>
+<button class="btn-comprar" data-nome="Arranjo Misto Suculentas" data-valor="69.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="cactos">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (95).jpg" alt="Cacto Gymnocalycium Variegata" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Coleção</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-palette"></i> Cacto Gymnocalycium Variegata</h3>
+<p>Cacto globular Gymnocalycium de cor variegata (verde e tons avermelhados). Peça de coleção e valorizada por sua coloração única.</p>
+<div class="produto-preco">R$ 59,90</div>
+<button class="btn-comprar" data-nome="Cacto Gymnocalycium Variegata" data-valor="59.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (96).jpg" alt="Bico-de-Papagaio Decorado Luxo" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Presente</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-ribbon"></i> Poinsettia Vermelha Luxo (Pote G)</h3>
+<p>Bico-de-Papagaio (Poinsettia) de porte grande, embalado com papel decorado em tons de ouro e vermelho, com laço. Alto valor para presente.</p>
+<div class="produto-preco">R$ 110,00</div>
+<button class="btn-comprar" data-nome="Poinsettia Luxo Grande" data-valor="110.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (97).jpg" alt="Mini-Pinheiro (Thuja) Decorado" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Mini-Árvore</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-tree"></i> Mini-Pinheiro (Thuja) Decorado</h3>
+<p>Muda de Thuja (Pinheirinho) já decorada com pequenos enfeites natalinos e laço, em vaso de cerâmica. Ideal para decoração de mesa.</p>
+<div class="produto-preco">R$ 79,90</div>
+<button class="btn-comprar" data-nome="Mini-Pinheiro Decorado" data-valor="79.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (98).jpg" alt="Suculenta Gasteria Maculata" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Exótica</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-shield-alt"></i> Suculenta Gasteria Maculata</h3>
+<p>Suculenta de folhas escuras, com manchas brancas em relevo. De crescimento lento e aspecto único, ideal para colecionadores e ambientes de sombra.</p>
+<div class="produto-preco">R$ 35,00</div>
+<button class="btn-comprar" data-nome="Gasteria Maculata" data-valor="35.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="flores-sol">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (99).jpg" alt="Mudas de Petúnias Coloridas" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Floração</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-cloud-sun"></i> Mudas de Petúnias Coloridas (Pacote 10)</h3>
+<p>Pacote de mudas de Petúnias, de flores abundantes em diversas cores (vermelho, rosa, branco). Flor de sol, ideal para jardineiras e canteiros. Preço por 10 unidades.</p>
+<div class="produto-preco">R$ 20,00</div>
+<button class="btn-comprar" data-nome="Mudas Petunias Pacote 10" data-valor="20.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="orquideas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (100).jpg" alt="Orquídea Phalaenopsis Branca (Haste Dupla)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Haste Dupla</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-feather-alt"></i> Orquídea Phalaenopsis Branca Premium</h3>
+<p>Orquídea clássica com flores brancas puras e grandes. Duas hastes florais. Vaso de plástico transparente com embalagem de presente.</p>
+<div class="produto-preco">R$ 139,90</div>
+<button class="btn-comprar" data-nome="Phalaenopsis Branca Haste Dupla" data-valor="139.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="vasos-barro">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (101).jpg" alt="Vaso Cachepô de Barro Decorado" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Cachepô</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-shapes"></i> Vaso Cachepô de Barro Pintado</h3>
+<p>Vaso de cerâmica (cachepô, sem furos) pintado à mão com listras pretas e brancas. Ideal para esconder o vaso de plástico das plantas internas.</p>
+<div class="produto-preco">R$ 49,90</div>
+<button class="btn-comprar" data-nome="Vaso Cachepo Barro Pintado" data-valor="49.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="natalinas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (102).jpg" alt="Bico-de-Papagaio (Mini) Vermelho" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Mini</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-gift"></i> Mini Poinsettia (Bico-de-Papagaio)</h3>
+<p>Poinsettia de porte pequeno (Mini), com flores vermelhas. Ideal para lembrancinhas de Natal ou decoração de pequenos espaços.</p>
+<div class="produto-preco">R$ 35,00</div>
+<button class="btn-comprar" data-nome="Mini Poinsettia" data-valor="35.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (103).jpg" alt="Suculenta Gasteria Bicolor Variegata" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Variegata</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-palette"></i> Suculenta Gasteria Variegata</h3>
+<p>Suculenta de folhas grossas com padrões manchados e tons de verde, branco e rosa claro (variegação). Uma peça rara de coleção.</p>
+<div class="produto-preco">R$ 69,90</div>
+<button class="btn-comprar" data-nome="Gasteria Variegata" data-valor="69.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (104).jpg" alt="Pleomele Variegata (Pote Grande)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Interior</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-tree-city"></i> Pleomele Variegata (Dracaena reflexa)</h3>
+<p>Arbusto de folhagem verde e amarela (variegata). Ideal para ambientes internos bem iluminados ou vasos grandes em jardins. Pote 24.</p>
+<div class="produto-preco">R$ 95,00</div>
+<button class="btn-comprar" data-nome="Pleomele Variegata Grande" data-valor="95.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-pendente">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (105).jpg" alt="Ripsalis Ramo Longo (Pendente)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Pendente</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-cloud-download-alt"></i> Ripsális (Cacto Macarrão) Longo</h3>
+<p>Cacto epífito de ramificações pendentes, parecido com macarrão verde. Ideal para vasos suspensos em locais com luz indireta.</p>
+<div class="produto-preco">R$ 59,90</div>
+<button class="btn-comprar" data-nome="Ripsalis Longo" data-valor="59.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (106).jpg" alt="Suculenta Gasteria Bicolor Variegata" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Variegata</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-palette"></i> Suculenta Gasteria Variegata (Pote 10)</h3>
+<p>Suculenta de folhas grossas com padrões manchados e tons de verde, branco e rosa claro (variegação). (Repetição do Prod 103, diferente pote).</p>
+<div class="produto-preco">R$ 69,90</div>
+<button class="btn-comprar" data-nome="Gasteria Variegata Pote 10" data-valor="69.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (107).jpg" alt="Pleomele Variegata (Pote Grande)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Interior</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-tree-city"></i> Pleomele Variegata (Dracaena reflexa)</h3>
+<p>Arbusto de folhagem verde e amarela (variegata). Ideal para ambientes internos bem iluminados. (Repetição do Prod 104).</p>
+<div class="produto-preco">R$ 95,00</div>
+<button class="btn-comprar" data-nome="Pleomele Variegata Grande" data-valor="95.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="flores-sol">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (108).jpg" alt="Mudas de Vinca (Várias Cores)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Sol Pleno</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-feather-alt"></i> Mudas de Vinca Sortidas (Pacote 10)</h3>
+<p>Pacote de mudas de Vinca (Catharanthus roseus) em cores variadas (branco, rosa, vermelho). Flor de sol, ideal para canteiros e maciços. Preço por 10 unidades. (Similar ao Prod 76).</p>
+<div class="produto-preco">R$ 25,00</div>
+<button class="btn-comprar" data-nome="Mudas Vinca Pacote 10" data-valor="25.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="trepadeira">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (109).jpg" alt="Tumbérgia Azul (Muda Tutorada)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Crescimento Rápido</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-cloud-sun"></i> Tumbérgia Azul (Thunbergia grandiflora)</h3>
+<p>Trepadeira de crescimento vigoroso e flores grandes, na cor azul/lilás. Ideal para cobrir caramanchões e cercas. Muda tutorada.</p>
+<div class="produto-preco">R$ 49,90</div>
+<button class="btn-comprar" data-nome="Tumbergia Azul" data-valor="49.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="suculentas">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (110).jpg" alt="Suculenta Gasteria Variegata" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Coleção</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-palette"></i> Suculenta Gasteria Variegata (Pote 10)</h3>
+<p>Suculenta de folhas grossas com padrões manchados e tons de verde, branco e rosa claro. (Repetição do Prod 103 e 106).</p>
+<div class="produto-preco">R$ 69,90</div>
+<button class="btn-comprar" data-nome="Gasteria Variegata Pote 10" data-valor="69.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (111).jpg" alt="Pleomele Variegata (Pote Grande)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Interior</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-tree-city"></i> Pleomele Variegata (Dracaena reflexa)</h3>
+<p>Arbusto de folhagem verde e amarela (variegata). Ideal para ambientes internos. (Repetição do Prod 104 e 107).</p>
+<div class="produto-preco">R$ 95,00</div>
+<button class="btn-comprar" data-nome="Pleomele Variegata Grande" data-valor="95.00">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+<div class="produto-card" data-category="folhagem-media">
+<div class="produto-image">
+<img src="fotos-produtos/Produto (112).jpg" alt="Aspargo Alfinete (Pendente)" loading="lazy" onerror="this.onerror=null; this.src='fotos-produtos/sem-foto.jpg'">
+<div class="produto-badge">Pendente</div>
+</div>
+<div class="produto-info">
+<h3><i class="fas fa-feather-alt"></i> Aspargo Alfinete (Asparagus densiflorus)</h3>
+<p>Folhagem pendente de textura fina, com ramificações leves. Ideal para vasos suspensos em varandas ou áreas com luz filtrada. (Repetição do Prod 88).</p>
+<div class="produto-preco">R$ 39,90</div>
+<button class="btn-comprar" data-nome="Aspargo Alfinete" data-valor="39.90">
+<i class="fab fa-whatsapp"></i> Comprar
+</button>
+</div>
+</div>
+                    <!-- CONTINUE ADICIONANDO OS PRÓXIMOS 118 PRODUTOS AQUI -->
+                    <!-- Use o mesmo formato, mudando apenas:
+                        1. Número da foto: Produto (5).jpg, Produto (6).jpg, etc.
+                        2. data-category: "vasos", "bonsais", "orquideas", "mudas", "plantas", "suculentas"
+                        3. alt="Nome do produto"
+                        4. <h3>Nome do produto</h3>
+                        5. <p>Descrição do produto</p>
+                        6. <div class="produto-preco">R$ XXX,XX</div>
+                        7. data-nome e data-valor no botão -->
+                    
+                </div>
+                <!-- ========== FIM DOS PRODUTOS ========== -->
+
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="cta-final">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Precisa de ajuda para escolher?</h2>
+                    <p>Nossa equipe está pronta para te ajudar a encontrar o presente perfeito!</p>
+                    <div class="cta-buttons">
+                        <a href="contato.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-phone"></i> Falar Conosco
+                        </a>
+                        <a href="https://wa.me/5555999162729" target="_blank" class="btn btn-secondary btn-large">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Rápido
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Floricultura Embeleze</h3>
+                    <p>Levando beleza e emoção através das flores desde 2005.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato Rápido</h3>
+                    <div class="contact-info">
+                        <a href="https://wa.me/5555999162729" target="_blank" class="contact-item">
+                            <i class="fab fa-whatsapp"></i> (55) 99916-2729
+                        </a>
+                        <a href="tel:+5555999162729" class="contact-item">
+                            <i class="fas fa-phone"></i> (55) 99916-2729
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Floricultura Embeleze. Três de Maio - RS</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5555999162729" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Botão Scroll to Top -->
+    <button id="scrollToTopBtn" class="btn-scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
+<!-- Script simples para filtros e WhatsApp -->
+<script>
+// Função de filtros (simples)
+function filtrarProdutos(categoria) {
+    const produtos = document.querySelectorAll('.produto-card');
+    const botoes = document.querySelectorAll('.filter-btn');
+    
+    // Atualizar botão ativo
+    botoes.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    // Mostrar/esconder produtos
+    produtos.forEach(produto => {
+        if (categoria === 'todos' || produto.getAttribute('data-category') === categoria) {
+            produto.style.display = 'flex';
+            produto.style.opacity = '1';
+        } else {
+            produto.style.display = 'none';
+            produto.style.opacity = '0';
+        }
+    });
+}
+
+// Botão WhatsApp
+document.addEventListener('click', function(e) {
+    if (e.target.closest('.btn-comprar')) {
+        const botao = e.target.closest('.btn-comprar');
+        const nome = botao.getAttribute('data-nome');
+        const valor = botao.getAttribute('data-valor');
+        
+        if (nome && valor) {
+            const mensagem = `🌸 *Floricultura Embeleze* 🌸\n\nQuero comprar:\n*${nome}*\n💲 Valor: R$ ${valor.replace('.', ',')}\n\nPodemos finalizar?`;
+            window.open(`https://wa.me/5555999162729?text=${encodeURIComponent(mensagem)}`, '_blank');
+        }
+    }
+});
+
+// Inicializar filtro "todos" por padrão
+document.addEventListener('DOMContentLoaded', function() {
+    // Ativar botão "todos"
+    const btnTodos = document.querySelector('.filter-btn[onclick*="todos"]');
+    if (btnTodos) btnTodos.classList.add('active');
+});
+</script>
+</body>
+</html>
